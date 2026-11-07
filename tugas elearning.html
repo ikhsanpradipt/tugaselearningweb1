@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ikhsan Pradiptianto</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+
+        h1 {
+            color: #010140;
+            text-align: center;
+        }
+
+        h2 {
+            color: #010140;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #010140;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #010140;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0d4778;
+        }
+
+        #hasil {
+            margin-top: 20px;
+            color: #1769aa;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px;
+            background-color: #010140;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Halo, Selamat Datang!</h1>
+
+        <h2 style="margin-top: 10px;">Tentang Saya</h2>
+
+<p>
+    Perkenalkan, nama saya <span class="highlight">Muhammad Ikhsan Pradiptianto</span>.
+    Saya merupakan mahasiswa Universitas Teknologi Bandung yang memiliki
+    ketertarikan terhadap dunia kreatif dan teknologi. Saya senang mencoba
+    berbagai hal baru, mengembangkan ide, serta mempelajari sesuatu yang
+    dapat menambah pengalaman dan kemampuan diri. Bagi saya, setiap
+    pengalaman merupakan kesempatan untuk belajar, berkembang, dan
+    menemukan hal-hal baru yang mungkin belum pernah saya coba sebelumnya.
+</p>
+
+<p>
+    Salah satu bidang yang saya sukai adalah desain grafis. Saya memiliki
+    pengalaman menggunakan CorelDRAW dan Canva untuk membuat berbagai
+    karya visual seperti poster, desain jersey, dan kebutuhan desain
+    lainnya. Selain desain, saya juga memiliki ketertarikan dalam bidang
+    fotografi. Saya senang mengabadikan berbagai momen melalui kamera
+    maupun ponsel. Saya juga memiliki pengalaman dalam editing video
+    menggunakan Adobe Premiere Pro dan After Effects, mulai dari
+    mengolah footage, menyusun video, hingga menambahkan berbagai efek
+    visual untuk menghasilkan karya yang lebih menarik. Menurut saya,
+    desain, fotografi, dan editing video merupakan bidang yang memberikan
+    ruang untuk mengekspresikan kreativitas dan menuangkan ide menjadi
+    sebuah karya yang menarik.
+</p>
+
+<p>
+    Di luar aktivitas tersebut, saya juga menyukai olahraga, khususnya
+    futsal dan sepak bola. Saya sering bermain sebagai penjaga gawang
+    karena menyukai tantangan dalam membaca arah bola, melakukan
+    penyelamatan, dan membantu tim mempertahankan pertahanan. Saat ini
+    saya juga sedang menjalani perkuliahan dan terus berusaha
+    mengembangkan kemampuan, baik dalam bidang akademik maupun
+    keterampilan lainnya. Saya berharap dapat terus belajar, mencoba
+    pengalaman baru, dan menghasilkan karya yang bermanfaat di masa
+    mendatang.
+</p>
+
+        <button onclick="tampilkanTanggal()">
+            Tampilkan Tanggal dan Jam
+        </button>
+
+        <div id="hasil"></div>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center;">Copyright © 2026 Muhammad Ikhsan Pradiptianto | Universitas Teknologi Bandung</p>
+    </footer>
+
+    <script>
+        function tampilkanTanggal() {
+            let sekarang = new Date();
+
+            document.getElementById("hasil").innerHTML =
+                "Sekarang: " + sekarang.toLocaleString("id-ID");
+        }
+    </script>
+
+</body>
+</html>
